@@ -13,7 +13,7 @@
   [surd]
   (int (evaluate surd)))
 
-(deftest surd-evaluation
+(deftest surd-tests
   (testing "Evaluating surds"
     (is (= (evaluate [-2 7 1]) 0.6457513110645907))
     (is (= (evaluate [2 7 1]) 4.645751311064591))
@@ -22,5 +22,3 @@
     (is (= (int-part [0 7 1]) 2))
     (is (= (int-part [2 7 3]) 1))
     (is (= (int-part [2 7 1]) 4))))
-
-(run-tests 'surds)
